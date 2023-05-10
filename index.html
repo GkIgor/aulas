@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet" />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .col-2 {
+        font-size: 7px !important;
+      }
+      #pre {
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+      }
+      #list > li {
+        list-style: none !important;
+        text-decoration: none !important;
+      }
+      #list > li {
+        margin: 2px 0;
+      }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example bd-example-row">
+    <!-- Example Code -->
+
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col">
+          <h3>Hello</h3>
+        </div>
+        <div class="col">
+          <h3>World</h3>
+        </div>
+        <div class="col">
+          <p>Isso é um exemplo de grid. Cada grid possui 12 colunas.</p>
+        </div>
+        <div class="col">
+          Nesse exemplo, utilizei a sintaxe simplificada, que posiciona
+          automaticamente as colunas de acordo com o tamanho disponivel.
+        </div>
+      </div>
+      <div class="col">
+        <p>
+          A sintaxe que eu utilizei, foi: <br />
+          &lt;div class="container"> <br />
+          para marcar um conteiner. dentro dele, fica o sistema de grade. grid
+        </p>
+        <p>
+          Aqui, podemos montar toda a estrutura do nosso grid, sempre com o
+          pensamento de linha e coluna. Exatamente como uma grade
+          <strong>#</strong> .
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-6 text-center">
+          <p>
+            Vamos a um layout mais completo? aqui, vamos utilizar as seguintes
+            linhas de codigo:
+          </p>
+          <pre id="pre">
+  &lt;div class="row">
+    &lt;div class="col-6">
+      &lt;p>Conteúdo do lado esquerdo&lt;/p>
+    &lt;/div>
+    &lt;div class="col-6">
+      &lt;p>Conteúdo do lado direito&lt;/p>
+    &lt;/div>
+  &lt;/div>
+</pre
+          >
+          <p>Observe uma explicação simples ao lado.</p>
+        </div>
+        <div class="col-6 text-center">
+          <p>
+            Verifique agora como está o nosso layou de grid. <br />
+            Temos duas grades ocupando 6 colunas cada, o que totaliza 12. <br />
+            Experimente o codigo ao lado para manipular as 6 colunas desse grid.
+            Acompanhe o resumo na grade abaixo para enteder melhor a
+            distribuição das colunas. Ah, observe a capacidade de responsividade
+            desse grid testando em diferentes dispositivos.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <p>
+            observe que eu estou utilizando 3 grid com 4 colunas cada. <br />
+            4x3 = 12
+          </p>
+        </div>
+        <div class="col-4">
+          <p>
+            aqui, eu poderia colocar mais duas divs, cada uma com 2 colunas,
+            totalizando 4 colunas.
+          </p>
+          <hr />
+          <div class="row">
+            <div class="col-2">
+              <b>2 col</b>
+            </div>
+            <div class="col-2">
+              <b>2 col</b>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <p>Você também pode usar os prefixos:</p>
+          <ul class="list-group" id="list">
+            <li>Extra small (xs)</li>
+            <li>Small (sm)</li>
+            <li>Medium (md)</li>
+            <li>Large (lg)</li>
+            <li>Extra large (xl)</li>
+            <li>Extra extra large (xxl)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Example Code -->
+  </body>
+</html>
